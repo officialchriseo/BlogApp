@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "155974127878",
+    "firebase_url": "https://track-me-46422.firebaseio.com",
+    "project_id": "track-me-46422",
+    "storage_bucket": "track-me-46422.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155974127878:android:f62546d1e15bd79a",
+        "android_client_info": {
+          "package_name": "com.blogspot.officialceo.trackme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155974127878-5aj7v2nm00k0c5n0cqumk8np9s531s0d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt9KyvaBfb30iNwsVG_BOWA82DMGyvSlw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
