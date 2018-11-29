@@ -1,5 +1,6 @@
 package com.blogspot.officialceo.trackme.activity;
 
+import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +17,7 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.blogspot.officialceo.trackme.BottomNavigationBehavior;
 import com.blogspot.officialceo.trackme.R;
 import com.blogspot.officialceo.trackme.animation.GuillotineAnimation;
 import com.blogspot.officialceo.trackme.fragment.AccountFragment;
@@ -142,6 +144,9 @@ public class Main2Activity extends AppCompatActivity {
        replaceFragment(new HomeFragment());
 
         mainButtomNavView.setOnNavigationItemSelectedListener(bottomNavigation);
+
+        CoordinatorLayout.LayoutParams layoutParams = (CoordinatorLayout.LayoutParams) mainButtomNavView.getLayoutParams();
+        layoutParams.setBehavior(new BottomNavigationBehavior());
 
 
        addPostButton.setOnClickListener(new View.OnClickListener() {
