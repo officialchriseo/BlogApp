@@ -145,10 +145,6 @@ public class Main2Activity extends AppCompatActivity {
 
         mainButtomNavView.setOnNavigationItemSelectedListener(bottomNavigation);
 
-        CoordinatorLayout.LayoutParams layoutParams = (CoordinatorLayout.LayoutParams) mainButtomNavView.getLayoutParams();
-        layoutParams.setBehavior(new BottomNavigationBehavior());
-
-
        addPostButton.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {

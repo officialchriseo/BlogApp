@@ -168,7 +168,11 @@ public class EditProfile extends AppCompatActivity {
                 final String profile_name = userProfileName.getText().toString();
                 final String profile_bio = userBio.getText().toString();
 
-                if (isChanged) {
+                if (TextUtils.isEmpty(profile_bio) || TextUtils.isEmpty(profile_name) || mImageUri == null){
+
+                    Toast.makeText(EditProfile.this, "Please provide all user data", Toast.LENGTH_SHORT).show();
+
+                }else if (isChanged) {
 
                     if (!TextUtils.isEmpty(profile_name) && !TextUtils.isEmpty(profile_bio) && mImageUri != null) {
 
